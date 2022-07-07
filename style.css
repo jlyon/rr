@@ -50,6 +50,6 @@ text{
 }
 svg:hover text{
   transition:font-size .4s ease-in;
-  font-size: 300px;
+  font-size: 100px;
 }
 
