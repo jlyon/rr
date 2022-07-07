@@ -1,0 +1,55 @@
+
+:root {
+--width: 500px;
+--x-speed: 13s;
+--y-speed: 7s;
+--transition-speed: 2.2s;
+}
+
+body,html{height:100%;margin:0;padding:0;background:url(bg.jpg) #FFC0CB;background-size: cover;}
+
+
+.el { 
+width: var(--width);
+height: var(--width);
+}
+
+.x {
+animation: x var(--x-speed) linear infinite alternate;
+}
+.y {
+animation: y var(--y-speed) linear infinite alternate;
+}
+
+@keyframes x {
+100% {
+    transform: translateX(calc(100vw - var(--width)));
+}
+}
+@keyframes y {
+100% {
+    transform: translateY(calc(100vh - var(--width)));
+}
+}
+
+
+svg{
+  background:url('ryry.jpg');
+  background-size:cover;
+  width:auto;
+  height:100%;
+  margin: auto;
+  display:block;
+}
+
+text{
+  font-size:10px;
+  transition:font-size .4s ease-out;
+  font-weight:900;
+  font-family:arial;
+}
+svg:hover text{
+  transition:font-size .4s ease-in;
+  font-size: 300px;
+}
+
